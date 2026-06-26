@@ -18,3 +18,29 @@ This is my first practice repository.
                 │ git push
                 ▼
              GitHub
+
+
+Git Workflow
+Edit Code
+    ↓
+git status
+    ↓
+git add
+    ↓
+git commit
+    ↓
+git push
+
+Think of it as:
+
+Check → Select → Save → Upload
+
+| Command                   | Purpose                               | Think Like       | Affects                    | Example                                      | When to Use                                         |
+| ------------------------- | ------------------------------------- | ---------------- | -------------------------- | -------------------------------------------- | --------------------------------------------------- |
+| `git status`              | Shows current state of the repository | **Check**        | Nothing                    | `git status`                                 | Before doing any Git operation                      |
+| `git add <file>`          | Stages a specific file                | **Select**       | Staging Area               | `git add notes.txt`                          | When only one file should be committed              |
+| `git add .`               | Stages all modified/new files         | **Select All**   | Staging Area               | `git add .`                                  | When all changes should be committed                |
+| `git commit -m "message"` | Creates a checkpoint                  | **Save**         | Local Git Repository       | `git commit -m "Added login"`                | After staging files                                 |
+| `git push`                | Uploads commits to GitHub             | **Upload**       | Remote Repository (GitHub) | `git push`                                   | After every commit                                  |
+| `git pull`                | Downloads latest changes from GitHub  | **Download**     | Local Repository           | `git pull`                                   | Before starting work or when teammates push changes |
+| `git clone <url>`         | Downloads an existing repository      | **Copy Project** | Creates Local Repository   | `git clone https://github.com/user/repo.git` | First time getting a project                        |
