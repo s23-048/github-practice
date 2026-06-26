@@ -1,2 +1,5 @@
 I am learning Git and GitHub.
 This is my first practice repository.
+
+
+Today i leaerned what git status means
